@@ -24,7 +24,7 @@ class Main extends PluginBase implements Listener {
 			$player = $entity;
 			$to = $event->getTo();
 			$toWorld = $to->getWorld();
-			$isAdmin = $player->hasPermission(DefaultPermissions::ROOT_OPERATOR) || $player->getGamemode()->equals(GameMode::CREATIVE());
+			$isAdmin = $player->hasPermission("noflyworld.bypass") || $player->hasPermission(DefaultPermissions::ROOT_OPERATOR) || $player->getGamemode()->equals(GameMode::CREATIVE());
 			$noFlyWorld = $this->getConfig()->get("NoFlyWorld");
 			$isNoFlyWorld = in_array($toWorld->getDisplayName(), $noFlyWorld) || in_array($toWorld->getFolderName(), $noFlyWorld);
 			if ($isNoFlyWorld && ($player->isFlying() || $player->getAllowFlight()) && !$isAdmin) {
