@@ -1,0 +1,10 @@
+---
+name: NoFlyWorld
+version: 0.0.1
+main: NhanAZ\NoFlyWorld\Main
+api: 5.0.0
+
+website: https://github.com/NhanAZ
+author: NhanAZ
+description: Auto disable player's flight in worlds set in configuration
+...
