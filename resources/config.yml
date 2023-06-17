@@ -1,3 +1,4 @@
 ---
+# Flight mode will be disabled when the player teleports the worlds listed below.
 NoFlyWorld: []
 ...
