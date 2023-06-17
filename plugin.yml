@@ -6,7 +6,7 @@ api: 5.0.0
 
 website: https://github.com/NhanAZ
 author: NhanAZ
-description: Auto disable player's flight in worlds set in configuration
+description: "Auto disable player's flight in worlds set in configuration"
 
 permissions:
   noflyworld.bypass:
